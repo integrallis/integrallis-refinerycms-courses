@@ -11,30 +11,30 @@ __A RefineryCMS Engine to Create/Manage and Sell Training Courses
 * gem 'integrallis-refinerycms-courses', '1.0', :path => 'vendor/engines'
 * Then run:
 * bundle install
-* rails generate bookmans-refinerycms-clubs
+* rails generate refinerycms_courses
 * rake db:migrate
 
 ### As a GEM dependency in vendor/engines as a GIT submodule
 
 * Add this engine as a submodule into vendor/engines/integrallis-refinerycms-courses
-* 	git submodule add git@github.com:Intergalactic/bookmans-refinerycms-clubs.git vendor/engines/integrallis-refinerycms-courses
+* 	git submodule add git@github.com:integrallis/integrallis-refinerycms-courses.git vendor/engines/integrallis-refinerycms-courses
 * To your Gemfile add: 
 * gem 'integrallis-refinerycms-courses', '1.0', :path => 'vendor/engines'
 * Then run:
 * bundle install
-* rails generate bookmans-refinerycms-clubs
+* rails generate refinerycms_courses
 * rake db:migrate
 
 #### To develop from the vendor branch
 
 * cd vendor/engines/integrallis-refinerycms-courses
-* git remote add push git@github.com:Intergalactic/bookmans-refinerycms-clubs.git
+* git remote add push git@github.com:integrallis/integrallis-refinerycms-courses.git
 * Now you can make changes to integrallis-refinerycms-courses from within the app and
 *	git push origin master
 
 ## How to build this engine as a gem
 
-    cd vendor/engines/clubs
+    cd vendor/engines/integrallis-refinerycms-courses
     gem build integrallis-refinerycms-courses.gemspec
     gem install integrallis-refinerycms-courses.gem
     

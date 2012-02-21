@@ -6,7 +6,7 @@ __A RefineryCMS Engine to Create/Manage and Sell Training Courses
 
 ### As a GEM dependency in vendor/engines
 
-* Clone this engine into vendor/integrallis-refinerycms-courses
+* Clone this engine into vendor/engines/integrallis-refinerycms-courses
 * To your Gemfile add: 
 * gem 'integrallis-refinerycms-courses', '1.0', :path => 'vendor/engines'
 * Then run:

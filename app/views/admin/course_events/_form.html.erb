@@ -1,0 +1,95 @@
+<%= form_for [:admin, @course_event] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @course_event,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+  
+  <div class='field'>
+    <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
+      <ul id='page_parts'>
+        <% [:description].each_with_index do |part, part_index| %>
+          <li class='ui-state-default<%= ' ui-state-active' if part_index == 0 %>'>
+            <%= link_to part.to_s.titleize, "##{part}" %>
+          </li>
+        <% end %>
+      </ul>
+
+      <div id='page_part_editors'>
+        <% [:description].each do |part| %>
+          <div class='page_part' id='<%= part %>'>
+            <%= f.text_area part, :rows => 20, :class => 'wymeditor widest' -%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  
+  <div class='field'>
+    <%= f.label :course_id -%>
+    <%= f.text_field :course_id -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :venue_id -%>
+    <%= f.text_field :venue_id -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :starts_at -%>
+    <%= f.datetime_select :starts_at -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :ends_at -%>
+    <%= f.datetime_select :ends_at -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :max_attendance -%>
+    <%= f.text_field :max_attendance -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :min_attendance -%>
+    <%= f.text_field :min_attendance -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :logo -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :logo_id,
+          :image => @course_event.logo,
+          :toggle_image_display => false
+        } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :type -%>
+    <%= f.text_field :type -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :state -%>
+    <%= f.text_field :state -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.course_events.course_event'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @course_event.title)
+              } %>
+<% end -%>
+<% content_for :javascripts do %>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end %>

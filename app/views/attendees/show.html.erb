@@ -1,0 +1,129 @@
+<% content_for :body_content_title do %>
+  <%= @attendee.first_name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>First Name</h1>
+    <p>
+      <%=raw @attendee.first_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Last Name</h1>
+    <p>
+      <%=raw @attendee.last_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Email</h1>
+    <p>
+      <%=raw @attendee.email %>
+    </p>
+  </section>
+  <section>
+    <h1>Street Address</h1>
+    <p>
+      <%=raw @attendee.street_address %>
+    </p>
+  </section>
+  <section>
+    <h1>Apt Suite Other</h1>
+    <p>
+      <%=raw @attendee.apt_suite_other %>
+    </p>
+  </section>
+  <section>
+    <h1>City</h1>
+    <p>
+      <%=raw @attendee.city %>
+    </p>
+  </section>
+  <section>
+    <h1>Region</h1>
+    <p>
+      <%=raw @attendee.region %>
+    </p>
+  </section>
+  <section>
+    <h1>Postal Code</h1>
+    <p>
+      <%=raw @attendee.postal_code %>
+    </p>
+  </section>
+  <section>
+    <h1>Country</h1>
+    <p>
+      <%=raw @attendee.country %>
+    </p>
+  </section>
+  <section>
+    <h1>Country Code</h1>
+    <p>
+      <%=raw @attendee.country_code %>
+    </p>
+  </section>
+  <section>
+    <h1>Phone Number</h1>
+    <p>
+      <%=raw @attendee.phone_number %>
+    </p>
+  </section>
+  <section>
+    <h1>Company</h1>
+    <p>
+      <%=raw @attendee.company %>
+    </p>
+  </section>
+  <section>
+    <h1>Gender</h1>
+    <p>
+      <%=raw @attendee.gender %>
+    </p>
+  </section>
+  <section>
+    <h1>Website</h1>
+    <p>
+      <%=raw @attendee.website %>
+    </p>
+  </section>
+  <section>
+    <h1>Latitude</h1>
+    <p>
+      <%=raw @attendee.latitude %>
+    </p>
+  </section>
+  <section>
+    <h1>Longitude</h1>
+    <p>
+      <%=raw @attendee.longitude %>
+    </p>
+  </section>
+  <section>
+    <h1>Email Opt In</h1>
+    <p>
+      <%=raw @attendee.email_opt_in %>
+    </p>
+  </section>
+  <section>
+    <h1>Newsletter Opt In</h1>
+    <p>
+      <%=raw @attendee.newsletter_opt_in %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="attendees">
+      <% @attendees.each do |attendee| %>
+        <li>
+          <%= link_to attendee.first_name, attendee_url(attendee) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

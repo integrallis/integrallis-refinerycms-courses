@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::PartPrerequisitesController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_part_prerequisites_url
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_part_prerequisite_url,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::PartPrerequisitesController.sortable? and PartPrerequisite.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Part Prerequisites"),
+                 admin_part_prerequisites_url,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Part Prerequisites"),
+                 admin_part_prerequisites_url,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

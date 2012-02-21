@@ -1,0 +1,18 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(part_prerequisite) -%>">
+  <span class='title'>
+    <%= part_prerequisite.reason %>
+    <span class="preview">&nbsp;</span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("application_go.png"), part_prerequisite_url(part_prerequisite),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_part_prerequisite_path(part_prerequisite),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), admin_part_prerequisite_path(part_prerequisite),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'shared.admin.delete', :title => part_prerequisite.reason),
+        :method => :delete %>
+  </span>
+</li>

@@ -1,0 +1,34 @@
+<%= form_for [:admin, @part_prerequisite] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @part_prerequisite,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :part_id -%>
+    <%= f.text_field :part_id, :class => 'larger widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :prerequisite_part_id -%>
+    <%= f.text_field :prerequisite_part_id -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :reason -%>
+    <%= f.text_field :reason -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :position -%>
+    <%= f.text_field :position -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.part_prerequisites.part_prerequisite'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @part_prerequisite.reason)
+              } %>
+<% end -%>

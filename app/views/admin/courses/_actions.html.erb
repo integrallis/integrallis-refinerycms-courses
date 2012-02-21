@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::CoursesController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_courses_url
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_course_url,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::CoursesController.sortable? and Course.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Courses"),
+                 admin_courses_url,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Courses"),
+                 admin_courses_url,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

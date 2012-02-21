@@ -1,0 +1,130 @@
+--- 
+nb: 
+  plugins: 
+    course_events: 
+      title: Course Events
+    attendees: 
+      title: Attendees
+    venues: 
+      title: Venues
+    part_prerequisites: 
+      title: Part Prerequisites
+    course_parts: 
+      title: Course Parts
+    parts: 
+      title: Parts
+    courses: 
+      title: Courses
+  admin: 
+    course_events: 
+      actions: 
+        create_new: Lag en ny Course Event
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Course Events"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Course Events"
+      records: 
+        title: Course Events
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Course Events enda. Klikk p\xC3\xA5 \"Lag en ny Course Event\" for \xC3\xA5 legge til din f\xC3\xB8rste course event."
+      course_event: 
+        view_live_html: "Vis hvordan denne course event ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne course event
+        delete: Fjern denne course event permanent
+    attendees: 
+      actions: 
+        create_new: Lag en ny Attendee
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Attendees"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Attendees"
+      records: 
+        title: Attendees
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Attendees enda. Klikk p\xC3\xA5 \"Lag en ny Attendee\" for \xC3\xA5 legge til din f\xC3\xB8rste attendee."
+      attendee: 
+        view_live_html: "Vis hvordan denne attendee ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne attendee
+        delete: Fjern denne attendee permanent
+    venues: 
+      actions: 
+        create_new: Lag en ny Venue
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Venues"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Venues"
+      records: 
+        title: Venues
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Venues enda. Klikk p\xC3\xA5 \"Lag en ny Venue\" for \xC3\xA5 legge til din f\xC3\xB8rste venue."
+      venue: 
+        view_live_html: "Vis hvordan denne venue ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne venue
+        delete: Fjern denne venue permanent
+    part_prerequisites: 
+      actions: 
+        create_new: Lag en ny Part Prerequisite
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Part Prerequisites"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Part Prerequisites"
+      records: 
+        title: Part Prerequisites
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Part Prerequisites enda. Klikk p\xC3\xA5 \"Lag en ny Part Prerequisite\" for \xC3\xA5 legge til din f\xC3\xB8rste part prerequisite."
+      part_prerequisite: 
+        view_live_html: "Vis hvordan denne part prerequisite ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne part prerequisite
+        delete: Fjern denne part prerequisite permanent
+    course_parts: 
+      actions: 
+        create_new: Lag en ny Course Part
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Course Parts"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Course Parts"
+      records: 
+        title: Course Parts
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Course Parts enda. Klikk p\xC3\xA5 \"Lag en ny Course Part\" for \xC3\xA5 legge til din f\xC3\xB8rste course part."
+      course_part: 
+        view_live_html: "Vis hvordan denne course part ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne course part
+        delete: Fjern denne course part permanent
+    parts: 
+      actions: 
+        create_new: Lag en ny Part
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Parts"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Parts"
+      records: 
+        title: Parts
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Parts enda. Klikk p\xC3\xA5 \"Lag en ny Part\" for \xC3\xA5 legge til din f\xC3\xB8rste part."
+      part: 
+        view_live_html: "Vis hvordan denne part ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne part
+        delete: Fjern denne part permanent
+    courses: 
+      actions: 
+        create_new: Lag en ny Course
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Courses"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Courses"
+      records: 
+        title: Courses
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Courses enda. Klikk p\xC3\xA5 \"Lag en ny Course\" for \xC3\xA5 legge til din f\xC3\xB8rste course."
+      course: 
+        view_live_html: "Vis hvordan denne course ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne course
+        delete: Fjern denne course permanent
+  course_events: 
+    show: 
+      other: Andre Course Events
+  attendees: 
+    show: 
+      other: Andre Attendees
+  venues: 
+    show: 
+      other: Andre Venues
+  part_prerequisites: 
+    show: 
+      other: Andre Part Prerequisites
+  course_parts: 
+    show: 
+      other: Andre Course Parts
+  parts: 
+    show: 
+      other: Andre Parts
+  courses: 
+    show: 
+      other: Andre Courses

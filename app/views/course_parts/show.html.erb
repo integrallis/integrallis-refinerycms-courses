@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @course_part.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Course</h1>
+    <p>
+      <%=raw @course_part.course_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Part</h1>
+    <p>
+      <%=raw @course_part.part_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Position</h1>
+    <p>
+      <%=raw @course_part.position %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="course_parts">
+      <% @course_parts.each do |course_part| %>
+        <li>
+          <%= link_to course_part.title, course_part_url(course_part) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

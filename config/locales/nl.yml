@@ -1,0 +1,130 @@
+--- 
+nl: 
+  plugins: 
+    course_events: 
+      title: Course Events
+    attendees: 
+      title: Attendees
+    venues: 
+      title: Venues
+    part_prerequisites: 
+      title: Part Prerequisites
+    course_parts: 
+      title: Course Parts
+    parts: 
+      title: Parts
+    courses: 
+      title: Courses
+  admin: 
+    course_events: 
+      actions: 
+        create_new: Maak een nieuwe Course Event
+        reorder: Wijzig de volgorde van de Course Events
+        reorder_done: Klaar met het wijzingen van de volgorde van de Course Events
+      records: 
+        title: Course Events
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Course Events. Druk op 'Maak een nieuwe Course Event' om de eerste aan te maken.
+      course_event: 
+        view_live_html: Bekijk deze course event op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze course event
+        delete: Verwijder deze course event voor eeuwig
+    attendees: 
+      actions: 
+        create_new: Maak een nieuwe Attendee
+        reorder: Wijzig de volgorde van de Attendees
+        reorder_done: Klaar met het wijzingen van de volgorde van de Attendees
+      records: 
+        title: Attendees
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Attendees. Druk op 'Maak een nieuwe Attendee' om de eerste aan te maken.
+      attendee: 
+        view_live_html: Bekijk deze attendee op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze attendee
+        delete: Verwijder deze attendee voor eeuwig
+    venues: 
+      actions: 
+        create_new: Maak een nieuwe Venue
+        reorder: Wijzig de volgorde van de Venues
+        reorder_done: Klaar met het wijzingen van de volgorde van de Venues
+      records: 
+        title: Venues
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Venues. Druk op 'Maak een nieuwe Venue' om de eerste aan te maken.
+      venue: 
+        view_live_html: Bekijk deze venue op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze venue
+        delete: Verwijder deze venue voor eeuwig
+    part_prerequisites: 
+      actions: 
+        create_new: Maak een nieuwe Part Prerequisite
+        reorder: Wijzig de volgorde van de Part Prerequisites
+        reorder_done: Klaar met het wijzingen van de volgorde van de Part Prerequisites
+      records: 
+        title: Part Prerequisites
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Part Prerequisites. Druk op 'Maak een nieuwe Part Prerequisite' om de eerste aan te maken.
+      part_prerequisite: 
+        view_live_html: Bekijk deze part prerequisite op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze part prerequisite
+        delete: Verwijder deze part prerequisite voor eeuwig
+    course_parts: 
+      actions: 
+        create_new: Maak een nieuwe Course Part
+        reorder: Wijzig de volgorde van de Course Parts
+        reorder_done: Klaar met het wijzingen van de volgorde van de Course Parts
+      records: 
+        title: Course Parts
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Course Parts. Druk op 'Maak een nieuwe Course Part' om de eerste aan te maken.
+      course_part: 
+        view_live_html: Bekijk deze course part op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze course part
+        delete: Verwijder deze course part voor eeuwig
+    parts: 
+      actions: 
+        create_new: Maak een nieuwe Part
+        reorder: Wijzig de volgorde van de Parts
+        reorder_done: Klaar met het wijzingen van de volgorde van de Parts
+      records: 
+        title: Parts
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Parts. Druk op 'Maak een nieuwe Part' om de eerste aan te maken.
+      part: 
+        view_live_html: Bekijk deze part op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze part
+        delete: Verwijder deze part voor eeuwig
+    courses: 
+      actions: 
+        create_new: Maak een nieuwe Course
+        reorder: Wijzig de volgorde van de Courses
+        reorder_done: Klaar met het wijzingen van de volgorde van de Courses
+      records: 
+        title: Courses
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Courses. Druk op 'Maak een nieuwe Course' om de eerste aan te maken.
+      course: 
+        view_live_html: Bekijk deze course op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze course
+        delete: Verwijder deze course voor eeuwig
+  course_events: 
+    show: 
+      other: Andere Course Events
+  attendees: 
+    show: 
+      other: Andere Attendees
+  venues: 
+    show: 
+      other: Andere Venues
+  part_prerequisites: 
+    show: 
+      other: Andere Part Prerequisites
+  course_parts: 
+    show: 
+      other: Andere Course Parts
+  parts: 
+    show: 
+      other: Andere Parts
+  courses: 
+    show: 
+      other: Andere Courses

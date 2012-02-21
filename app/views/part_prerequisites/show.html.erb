@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @part_prerequisite.reason %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Part</h1>
+    <p>
+      <%=raw @part_prerequisite.part_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Prerequisite Part</h1>
+    <p>
+      <%=raw @part_prerequisite.prerequisite_part_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Reason</h1>
+    <p>
+      <%=raw @part_prerequisite.reason %>
+    </p>
+  </section>
+  <section>
+    <h1>Position</h1>
+    <p>
+      <%=raw @part_prerequisite.position %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="part_prerequisites">
+      <% @part_prerequisites.each do |part_prerequisite| %>
+        <li>
+          <%= link_to part_prerequisite.reason, part_prerequisite_url(part_prerequisite) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

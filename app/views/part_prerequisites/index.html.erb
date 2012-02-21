@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="part_prerequisites">
+    <% @part_prerequisites.each do |part_prerequisite| %>
+      <li>
+        <%= link_to part_prerequisite.reason, part_prerequisite_url(part_prerequisite) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

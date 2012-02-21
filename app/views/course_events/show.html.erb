@@ -1,0 +1,87 @@
+<% content_for :body_content_title do %>
+  <%= @course_event.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @course_event.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @course_event.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Course</h1>
+    <p>
+      <%=raw @course_event.course_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Venue</h1>
+    <p>
+      <%=raw @course_event.venue_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Starts At</h1>
+    <p>
+      <%=raw @course_event.starts_at %>
+    </p>
+  </section>
+  <section>
+    <h1>Ends At</h1>
+    <p>
+      <%=raw @course_event.ends_at %>
+    </p>
+  </section>
+  <section>
+    <h1>Max Attendance</h1>
+    <p>
+      <%=raw @course_event.max_attendance %>
+    </p>
+  </section>
+  <section>
+    <h1>Min Attendance</h1>
+    <p>
+      <%=raw @course_event.min_attendance %>
+    </p>
+  </section>
+  <section>
+    <h1>Logo</h1>
+    <p>
+      <%= image_fu @course_event.logo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Type</h1>
+    <p>
+      <%=raw @course_event.type %>
+    </p>
+  </section>
+  <section>
+    <h1>State</h1>
+    <p>
+      <%=raw @course_event.state %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="course_events">
+      <% @course_events.each do |course_event| %>
+        <li>
+          <%= link_to course_event.title, course_event_url(course_event) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

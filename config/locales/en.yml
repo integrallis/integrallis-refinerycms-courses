@@ -1,0 +1,134 @@
+--- 
+en: 
+  shared: 
+    admin: 
+      image_picker: 
+        image: image
+  plugins: 
+    course_events: 
+      title: Course Events
+    attendees: 
+      title: Attendees
+    venues: 
+      title: Venues
+    part_prerequisites: 
+      title: Part Prerequisites
+    course_parts: 
+      title: Course Parts
+    parts: 
+      title: Parts
+    courses: 
+      title: Courses
+  admin: 
+    course_events: 
+      actions: 
+        create_new: Add New Course Event
+        reorder: Reorder Course Events
+        reorder_done: Done Reordering Course Events
+      records: 
+        title: Course Events
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Course Events yet. Click "Add New Course Event" to add your first course event.
+      course_event: 
+        view_live_html: View this course event live <br/><em>(opens in a new window)</em>
+        edit: Edit this course event
+        delete: Remove this course event forever
+    attendees: 
+      actions: 
+        create_new: Add New Attendee
+        reorder: Reorder Attendees
+        reorder_done: Done Reordering Attendees
+      records: 
+        title: Attendees
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Attendees yet. Click "Add New Attendee" to add your first attendee.
+      attendee: 
+        view_live_html: View this attendee live <br/><em>(opens in a new window)</em>
+        edit: Edit this attendee
+        delete: Remove this attendee forever
+    venues: 
+      actions: 
+        create_new: Add New Venue
+        reorder: Reorder Venues
+        reorder_done: Done Reordering Venues
+      records: 
+        title: Venues
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Venues yet. Click "Add New Venue" to add your first venue.
+      venue: 
+        view_live_html: View this venue live <br/><em>(opens in a new window)</em>
+        edit: Edit this venue
+        delete: Remove this venue forever
+    part_prerequisites: 
+      actions: 
+        create_new: Add New Part Prerequisite
+        reorder: Reorder Part Prerequisites
+        reorder_done: Done Reordering Part Prerequisites
+      records: 
+        title: Part Prerequisites
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Part Prerequisites yet. Click "Add New Part Prerequisite" to add your first part prerequisite.
+      part_prerequisite: 
+        view_live_html: View this part prerequisite live <br/><em>(opens in a new window)</em>
+        edit: Edit this part prerequisite
+        delete: Remove this part prerequisite forever
+    course_parts: 
+      actions: 
+        create_new: Add New Course Part
+        reorder: Reorder Course Parts
+        reorder_done: Done Reordering Course Parts
+      records: 
+        title: Course Parts
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Course Parts yet. Click "Add New Course Part" to add your first course part.
+      course_part: 
+        view_live_html: View this course part live <br/><em>(opens in a new window)</em>
+        edit: Edit this course part
+        delete: Remove this course part forever
+    parts: 
+      actions: 
+        create_new: Add New Part
+        reorder: Reorder Parts
+        reorder_done: Done Reordering Parts
+      records: 
+        title: Parts
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Parts yet. Click "Add New Part" to add your first part.
+      part: 
+        view_live_html: View this part live <br/><em>(opens in a new window)</em>
+        edit: Edit this part
+        delete: Remove this part forever
+    courses: 
+      actions: 
+        create_new: Add New Course
+        reorder: Reorder Courses
+        reorder_done: Done Reordering Courses
+      records: 
+        title: Courses
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Courses yet. Click "Add New Course" to add your first course.
+      course: 
+        view_live_html: View this course live <br/><em>(opens in a new window)</em>
+        edit: Edit this course
+        delete: Remove this course forever
+  course_events: 
+    show: 
+      other: Other Course Events
+  attendees: 
+    show: 
+      other: Other Attendees
+  venues: 
+    show: 
+      other: Other Venues
+  part_prerequisites: 
+    show: 
+      other: Other Part Prerequisites
+  course_parts: 
+    show: 
+      other: Other Course Parts
+  parts: 
+    show: 
+      other: Other Parts
+  courses: 
+    show: 
+      other: Other Courses

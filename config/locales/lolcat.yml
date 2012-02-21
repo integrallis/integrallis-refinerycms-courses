@@ -1,0 +1,134 @@
+--- 
+lolcat: 
+  shared: 
+    admin: 
+      image_picker: 
+        image: IMAGE
+  plugins: 
+    course_events: 
+      title: Course Events
+    attendees: 
+      title: Attendees
+    venues: 
+      title: Venues
+    part_prerequisites: 
+      title: Part Prerequisites
+    course_parts: 
+      title: Course Parts
+    parts: 
+      title: Parts
+    courses: 
+      title: Courses
+  admin: 
+    course_events: 
+      actions: 
+        create_new: CREATE NEW Course Event
+        reorder: REORDR Course Events
+        reorder_done: DUN REORDERIN Course Events
+      records: 
+        title: Course Events
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Course Events YET. CLICK "CREATE NEW Course Event" 2 ADD UR FURST course event.
+      course_event: 
+        view_live_html: VIEW DIS course event LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS course event
+        delete: REMOOV DIS course event FOREVR
+    attendees: 
+      actions: 
+        create_new: CREATE NEW Attendee
+        reorder: REORDR Attendees
+        reorder_done: DUN REORDERIN Attendees
+      records: 
+        title: Attendees
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Attendees YET. CLICK "CREATE NEW Attendee" 2 ADD UR FURST attendee.
+      attendee: 
+        view_live_html: VIEW DIS attendee LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS attendee
+        delete: REMOOV DIS attendee FOREVR
+    venues: 
+      actions: 
+        create_new: CREATE NEW Venue
+        reorder: REORDR Venues
+        reorder_done: DUN REORDERIN Venues
+      records: 
+        title: Venues
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Venues YET. CLICK "CREATE NEW Venue" 2 ADD UR FURST venue.
+      venue: 
+        view_live_html: VIEW DIS venue LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS venue
+        delete: REMOOV DIS venue FOREVR
+    part_prerequisites: 
+      actions: 
+        create_new: CREATE NEW Part Prerequisite
+        reorder: REORDR Part Prerequisites
+        reorder_done: DUN REORDERIN Part Prerequisites
+      records: 
+        title: Part Prerequisites
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Part Prerequisites YET. CLICK "CREATE NEW Part Prerequisite" 2 ADD UR FURST part prerequisite.
+      part_prerequisite: 
+        view_live_html: VIEW DIS part prerequisite LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS part prerequisite
+        delete: REMOOV DIS part prerequisite FOREVR
+    course_parts: 
+      actions: 
+        create_new: CREATE NEW Course Part
+        reorder: REORDR Course Parts
+        reorder_done: DUN REORDERIN Course Parts
+      records: 
+        title: Course Parts
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Course Parts YET. CLICK "CREATE NEW Course Part" 2 ADD UR FURST course part.
+      course_part: 
+        view_live_html: VIEW DIS course part LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS course part
+        delete: REMOOV DIS course part FOREVR
+    parts: 
+      actions: 
+        create_new: CREATE NEW Part
+        reorder: REORDR Parts
+        reorder_done: DUN REORDERIN Parts
+      records: 
+        title: Parts
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Parts YET. CLICK "CREATE NEW Part" 2 ADD UR FURST part.
+      part: 
+        view_live_html: VIEW DIS part LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS part
+        delete: REMOOV DIS part FOREVR
+    courses: 
+      actions: 
+        create_new: CREATE NEW Course
+        reorder: REORDR Courses
+        reorder_done: DUN REORDERIN Courses
+      records: 
+        title: Courses
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Courses YET. CLICK "CREATE NEW Course" 2 ADD UR FURST course.
+      course: 
+        view_live_html: VIEW DIS course LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS course
+        delete: REMOOV DIS course FOREVR
+  course_events: 
+    show: 
+      other: OTHR Course Events
+  attendees: 
+    show: 
+      other: OTHR Attendees
+  venues: 
+    show: 
+      other: OTHR Venues
+  part_prerequisites: 
+    show: 
+      other: OTHR Part Prerequisites
+  course_parts: 
+    show: 
+      other: OTHR Course Parts
+  parts: 
+    show: 
+      other: OTHR Parts
+  courses: 
+    show: 
+      other: OTHR Courses

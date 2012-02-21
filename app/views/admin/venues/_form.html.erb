@@ -1,0 +1,89 @@
+<%= form_for [:admin, @venue] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @venue,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :street_address -%>
+    <%= f.text_field :street_address -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :apt_suite_other -%>
+    <%= f.text_field :apt_suite_other -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :city -%>
+    <%= f.text_field :city -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :region -%>
+    <%= f.text_field :region -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :postal_code -%>
+    <%= f.text_field :postal_code -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :country -%>
+    <%= f.text_field :country -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :country_code -%>
+    <%= f.text_field :country_code -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :phone_number -%>
+    <%= f.text_field :phone_number -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :contact_name -%>
+    <%= f.text_field :contact_name -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :latitude -%>
+    <%= f.text_field :latitude -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :longitude -%>
+    <%= f.text_field :longitude -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :max_capacity -%>
+    <%= f.text_field :max_capacity -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :min_capacity -%>
+    <%= f.text_field :min_capacity -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :website -%>
+    <%= f.text_field :website -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.venues.venue'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @venue.name)
+              } %>
+<% end -%>

@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @part.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @part.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @part.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Duration In Minutes</h1>
+    <p>
+      <%=raw @part.duration_in_minutes %>
+    </p>
+  </section>
+  <section>
+    <h1>Price</h1>
+    <p>
+      <%=raw @part.price %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="parts">
+      <% @parts.each do |part| %>
+        <li>
+          <%= link_to part.title, part_url(part) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

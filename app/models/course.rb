@@ -7,21 +7,13 @@ class Course < ActiveRecord::Base
   
   belongs_to :image
   has_many :course_parts, :order => :position
+  has_many :parts, :through => :course_parts
   
   def duration 
-    duration = 0
-    course_parts.each do |part|
-      duration = duration + part.part.duration
-    end
-    duration = duration / 7 # hours in a day
-    duration
+    parts.map(&:duration_in_minutes).inject(:+)
   end
   
   def price
-    price = 0
-    course_parts.each do |part|
-      price = price + part.part.price
-    end
-    price
+    parts.map(&:price).inject(:+)
   end
 end

@@ -6,5 +6,7 @@ class Part < ActiveRecord::Base
   validates :title, :presence => true, :uniqueness => true
   
   has_many :course_parts
+  has_many :part_prerequisites
+  has_many :prerequisites, :through => :part_prerequisites, :source => :prerequisite
   
 end

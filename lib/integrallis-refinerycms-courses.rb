@@ -5,6 +5,8 @@ require 'active_record/transitions'
 require 'acts-as-taggable-on'
 require 'acts_as_commentable'
 require 'acts_as_rateable'
+require 'acts_as_list'
+require 'geocoder'
 
 module Refinery
   module Courses

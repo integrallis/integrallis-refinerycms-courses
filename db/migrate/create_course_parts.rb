@@ -5,7 +5,6 @@ class CreateCourseParts < ActiveRecord::Migration
       t.integer :course_id
       t.integer :part_id
       t.integer :position
-      t.integer :position
 
       t.timestamps
     end

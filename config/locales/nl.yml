@@ -1,6 +1,16 @@
 --- 
 nl: 
   plugins: 
+    instructor_skills: 
+      title: Instructor Skills
+    skills: 
+      title: Skills
+    course_event_instructors: 
+      title: Course Event Instructors
+    instructors: 
+      title: Instructors
+    course_event_attendees: 
+      title: Course Event Attendees
     course_events: 
       title: Course Events
     attendees: 
@@ -16,6 +26,71 @@ nl:
     courses: 
       title: Courses
   admin: 
+    instructor_skills: 
+      actions: 
+        create_new: Maak een nieuwe Instructor Skill
+        reorder: Wijzig de volgorde van de Instructor Skills
+        reorder_done: Klaar met het wijzingen van de volgorde van de Instructor Skills
+      records: 
+        title: Instructor Skills
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Instructor Skills. Druk op 'Maak een nieuwe Instructor Skill' om de eerste aan te maken.
+      instructor_skill: 
+        view_live_html: Bekijk deze instructor skill op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze instructor skill
+        delete: Verwijder deze instructor skill voor eeuwig
+    skills: 
+      actions: 
+        create_new: Maak een nieuwe Skill
+        reorder: Wijzig de volgorde van de Skills
+        reorder_done: Klaar met het wijzingen van de volgorde van de Skills
+      records: 
+        title: Skills
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Skills. Druk op 'Maak een nieuwe Skill' om de eerste aan te maken.
+      skill: 
+        view_live_html: Bekijk deze skill op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze skill
+        delete: Verwijder deze skill voor eeuwig
+    course_event_instructors: 
+      actions: 
+        create_new: Maak een nieuwe Course Event Instructor
+        reorder: Wijzig de volgorde van de Course Event Instructors
+        reorder_done: Klaar met het wijzingen van de volgorde van de Course Event Instructors
+      records: 
+        title: Course Event Instructors
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Course Event Instructors. Druk op 'Maak een nieuwe Course Event Instructor' om de eerste aan te maken.
+      course_event_instructor: 
+        view_live_html: Bekijk deze course event instructor op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze course event instructor
+        delete: Verwijder deze course event instructor voor eeuwig
+    instructors: 
+      actions: 
+        create_new: Maak een nieuwe Instructor
+        reorder: Wijzig de volgorde van de Instructors
+        reorder_done: Klaar met het wijzingen van de volgorde van de Instructors
+      records: 
+        title: Instructors
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Instructors. Druk op 'Maak een nieuwe Instructor' om de eerste aan te maken.
+      instructor: 
+        view_live_html: Bekijk deze instructor op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze instructor
+        delete: Verwijder deze instructor voor eeuwig
+    course_event_attendees: 
+      actions: 
+        create_new: Maak een nieuwe Course Event Attendee
+        reorder: Wijzig de volgorde van de Course Event Attendees
+        reorder_done: Klaar met het wijzingen van de volgorde van de Course Event Attendees
+      records: 
+        title: Course Event Attendees
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Course Event Attendees. Druk op 'Maak een nieuwe Course Event Attendee' om de eerste aan te maken.
+      course_event_attendee: 
+        view_live_html: Bekijk deze course event attendee op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze course event attendee
+        delete: Verwijder deze course event attendee voor eeuwig
     course_events: 
       actions: 
         create_new: Maak een nieuwe Course Event
@@ -107,6 +182,21 @@ nl:
         view_live_html: Bekijk deze course op de website <br/><em>(opent een nieuw venster)</em>
         edit: Bewerk deze course
         delete: Verwijder deze course voor eeuwig
+  instructor_skills: 
+    show: 
+      other: Andere Instructor Skills
+  skills: 
+    show: 
+      other: Andere Skills
+  course_event_instructors: 
+    show: 
+      other: Andere Course Event Instructors
+  instructors: 
+    show: 
+      other: Andere Instructors
+  course_event_attendees: 
+    show: 
+      other: Andere Course Event Attendees
   course_events: 
     show: 
       other: Andere Course Events

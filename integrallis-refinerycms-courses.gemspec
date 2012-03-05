@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.add_dependency "eventbrite", ">= 0.3.0"
   s.add_dependency "acts_as_commentable", ">= 3.0.1"
   s.add_dependency "geocoder", ">= 1.1.1"
-  s.add_dependency "acts_as_rateable", ">= 2.0.1"
+  s.add_dependency "ajaxful_rating", ">= 3.0.0.beta8"
 end

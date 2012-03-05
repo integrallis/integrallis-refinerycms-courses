@@ -4,13 +4,19 @@ class CourseEvent < ActiveRecord::Base
   acts_as_indexed :fields => [:title, :description, :type, :state]
   acts_as_taggable
   acts_as_commentable
-  #acts_as_rateable
+  ajaxful_rateable :stars => 5, :allow_update => true
 
   validates :title, :presence => true, :uniqueness => true
   
   belongs_to :course
   belongs_to :venue
   belongs_to :logo, :class_name => 'Image'
+  
+  has_many :course_event_attendees
+  has_many :attendees, :through => :course_event_attendees
+  
+  has_many :course_event_instructors
+  has_many :instructors, :through => :course_event_instructors
   
   state_machine :auto_scopes => true do
     state :draft
@@ -34,7 +40,10 @@ class CourseEvent < ActiveRecord::Base
     event :postpone do
       transitions :to => :postponed, :from => [:published, :cancelled]
     end
-
+  end
+  
+  def enroll(attendee)
+    CourseEventAttendee.create(:course_event => self, :attendee => attendee)
   end
   
   def publish_to_eventbrite

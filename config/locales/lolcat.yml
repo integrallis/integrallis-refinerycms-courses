@@ -5,6 +5,16 @@ lolcat:
       image_picker: 
         image: IMAGE
   plugins: 
+    instructor_skills: 
+      title: Instructor Skills
+    skills: 
+      title: Skills
+    course_event_instructors: 
+      title: Course Event Instructors
+    instructors: 
+      title: Instructors
+    course_event_attendees: 
+      title: Course Event Attendees
     course_events: 
       title: Course Events
     attendees: 
@@ -20,6 +30,71 @@ lolcat:
     courses: 
       title: Courses
   admin: 
+    instructor_skills: 
+      actions: 
+        create_new: CREATE NEW Instructor Skill
+        reorder: REORDR Instructor Skills
+        reorder_done: DUN REORDERIN Instructor Skills
+      records: 
+        title: Instructor Skills
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Instructor Skills YET. CLICK "CREATE NEW Instructor Skill" 2 ADD UR FURST instructor skill.
+      instructor_skill: 
+        view_live_html: VIEW DIS instructor skill LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS instructor skill
+        delete: REMOOV DIS instructor skill FOREVR
+    skills: 
+      actions: 
+        create_new: CREATE NEW Skill
+        reorder: REORDR Skills
+        reorder_done: DUN REORDERIN Skills
+      records: 
+        title: Skills
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Skills YET. CLICK "CREATE NEW Skill" 2 ADD UR FURST skill.
+      skill: 
+        view_live_html: VIEW DIS skill LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS skill
+        delete: REMOOV DIS skill FOREVR
+    course_event_instructors: 
+      actions: 
+        create_new: CREATE NEW Course Event Instructor
+        reorder: REORDR Course Event Instructors
+        reorder_done: DUN REORDERIN Course Event Instructors
+      records: 
+        title: Course Event Instructors
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Course Event Instructors YET. CLICK "CREATE NEW Course Event Instructor" 2 ADD UR FURST course event instructor.
+      course_event_instructor: 
+        view_live_html: VIEW DIS course event instructor LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS course event instructor
+        delete: REMOOV DIS course event instructor FOREVR
+    instructors: 
+      actions: 
+        create_new: CREATE NEW Instructor
+        reorder: REORDR Instructors
+        reorder_done: DUN REORDERIN Instructors
+      records: 
+        title: Instructors
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Instructors YET. CLICK "CREATE NEW Instructor" 2 ADD UR FURST instructor.
+      instructor: 
+        view_live_html: VIEW DIS instructor LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS instructor
+        delete: REMOOV DIS instructor FOREVR
+    course_event_attendees: 
+      actions: 
+        create_new: CREATE NEW Course Event Attendee
+        reorder: REORDR Course Event Attendees
+        reorder_done: DUN REORDERIN Course Event Attendees
+      records: 
+        title: Course Event Attendees
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Course Event Attendees YET. CLICK "CREATE NEW Course Event Attendee" 2 ADD UR FURST course event attendee.
+      course_event_attendee: 
+        view_live_html: VIEW DIS course event attendee LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS course event attendee
+        delete: REMOOV DIS course event attendee FOREVR
     course_events: 
       actions: 
         create_new: CREATE NEW Course Event
@@ -111,6 +186,21 @@ lolcat:
         view_live_html: VIEW DIS course LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
         edit: EDIT DIS course
         delete: REMOOV DIS course FOREVR
+  instructor_skills: 
+    show: 
+      other: OTHR Instructor Skills
+  skills: 
+    show: 
+      other: OTHR Skills
+  course_event_instructors: 
+    show: 
+      other: OTHR Course Event Instructors
+  instructors: 
+    show: 
+      other: OTHR Instructors
+  course_event_attendees: 
+    show: 
+      other: OTHR Course Event Attendees
   course_events: 
     show: 
       other: OTHR Course Events

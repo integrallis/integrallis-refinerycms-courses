@@ -1,0 +1,165 @@
+<%= form_for [:admin, @instructor] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @instructor,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :first_name -%>
+    <%= f.text_field :first_name, :class => 'larger widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :last_name -%>
+    <%= f.text_field :last_name -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :email -%>
+    <%= f.text_field :email -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :short_bio -%>
+    <%= f.text_field :short_bio -%>
+  </div>
+  
+  <div class='field'>
+    <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
+      <ul id='page_parts'>
+        <% [:bio].each_with_index do |part, part_index| %>
+          <li class='ui-state-default<%= ' ui-state-active' if part_index == 0 %>'>
+            <%= link_to part.to_s.titleize, "##{part}" %>
+          </li>
+        <% end %>
+      </ul>
+
+      <div id='page_part_editors'>
+        <% [:bio].each do |part| %>
+          <div class='page_part' id='<%= part %>'>
+            <%= f.text_area part, :rows => 20, :class => 'wymeditor widest' -%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  
+  <div class='field'>
+    <%= f.label :blog_url -%>
+    <%= f.text_field :blog_url -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :blog_rss_feed -%>
+    <%= f.text_field :blog_rss_feed -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :feed_type -%>
+    <%= f.text_field :feed_type -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :blog_enabled -%>
+    <%= f.check_box :blog_enabled -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :dc_creator_tag -%>
+    <%= f.text_field :dc_creator_tag -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :twitter_id -%>
+    <%= f.text_field :twitter_id -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :twitter_enabled -%>
+    <%= f.check_box :twitter_enabled -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :street_address -%>
+    <%= f.text_field :street_address -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :apt_suite_other -%>
+    <%= f.text_field :apt_suite_other -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :city -%>
+    <%= f.text_field :city -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :region -%>
+    <%= f.text_field :region -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :postal_code -%>
+    <%= f.text_field :postal_code -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :country -%>
+    <%= f.text_field :country -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :country_code -%>
+    <%= f.text_field :country_code -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :phone_number -%>
+    <%= f.text_field :phone_number -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :gender -%>
+    <%= f.text_field :gender -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :website -%>
+    <%= f.text_field :website -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :latitude -%>
+    <%= f.text_field :latitude -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :longitude -%>
+    <%= f.text_field :longitude -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :email_opt_in -%>
+    <%= f.check_box :email_opt_in -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :newsletter_opt_in -%>
+    <%= f.check_box :newsletter_opt_in -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.instructors.instructor'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @instructor.first_name)
+              } %>
+<% end -%>
+<% content_for :javascripts do %>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end %>

@@ -1,0 +1,19 @@
+<%= form_for [:admin, @skill] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @skill,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.skills.skill'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @skill.name)
+              } %>
+<% end -%>

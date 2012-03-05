@@ -15,3 +15,5 @@ page = Page.create(
 Page.default_parts.each do |default_page_part|
   page.parts.create(:title => default_page_part, :body => nil)
 end
+
+Attendee.create(:first_name => "Guest", :last_name => "User", :email => "guestuser@nowhere.com")

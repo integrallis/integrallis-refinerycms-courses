@@ -1,6 +1,16 @@
 --- 
 nb: 
   plugins: 
+    instructor_skills: 
+      title: Instructor Skills
+    skills: 
+      title: Skills
+    course_event_instructors: 
+      title: Course Event Instructors
+    instructors: 
+      title: Instructors
+    course_event_attendees: 
+      title: Course Event Attendees
     course_events: 
       title: Course Events
     attendees: 
@@ -16,6 +26,71 @@ nb:
     courses: 
       title: Courses
   admin: 
+    instructor_skills: 
+      actions: 
+        create_new: Lag en ny Instructor Skill
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Instructor Skills"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Instructor Skills"
+      records: 
+        title: Instructor Skills
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Instructor Skills enda. Klikk p\xC3\xA5 \"Lag en ny Instructor Skill\" for \xC3\xA5 legge til din f\xC3\xB8rste instructor skill."
+      instructor_skill: 
+        view_live_html: "Vis hvordan denne instructor skill ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne instructor skill
+        delete: Fjern denne instructor skill permanent
+    skills: 
+      actions: 
+        create_new: Lag en ny Skill
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Skills"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Skills"
+      records: 
+        title: Skills
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Skills enda. Klikk p\xC3\xA5 \"Lag en ny Skill\" for \xC3\xA5 legge til din f\xC3\xB8rste skill."
+      skill: 
+        view_live_html: "Vis hvordan denne skill ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne skill
+        delete: Fjern denne skill permanent
+    course_event_instructors: 
+      actions: 
+        create_new: Lag en ny Course Event Instructor
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Course Event Instructors"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Course Event Instructors"
+      records: 
+        title: Course Event Instructors
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Course Event Instructors enda. Klikk p\xC3\xA5 \"Lag en ny Course Event Instructor\" for \xC3\xA5 legge til din f\xC3\xB8rste course event instructor."
+      course_event_instructor: 
+        view_live_html: "Vis hvordan denne course event instructor ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne course event instructor
+        delete: Fjern denne course event instructor permanent
+    instructors: 
+      actions: 
+        create_new: Lag en ny Instructor
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Instructors"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Instructors"
+      records: 
+        title: Instructors
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Instructors enda. Klikk p\xC3\xA5 \"Lag en ny Instructor\" for \xC3\xA5 legge til din f\xC3\xB8rste instructor."
+      instructor: 
+        view_live_html: "Vis hvordan denne instructor ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne instructor
+        delete: Fjern denne instructor permanent
+    course_event_attendees: 
+      actions: 
+        create_new: Lag en ny Course Event Attendee
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Course Event Attendees"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Course Event Attendees"
+      records: 
+        title: Course Event Attendees
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Course Event Attendees enda. Klikk p\xC3\xA5 \"Lag en ny Course Event Attendee\" for \xC3\xA5 legge til din f\xC3\xB8rste course event attendee."
+      course_event_attendee: 
+        view_live_html: "Vis hvordan denne course event attendee ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne course event attendee
+        delete: Fjern denne course event attendee permanent
     course_events: 
       actions: 
         create_new: Lag en ny Course Event
@@ -107,6 +182,21 @@ nb:
         view_live_html: "Vis hvordan denne course ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
         edit: Rediger denne course
         delete: Fjern denne course permanent
+  instructor_skills: 
+    show: 
+      other: Andre Instructor Skills
+  skills: 
+    show: 
+      other: Andre Skills
+  course_event_instructors: 
+    show: 
+      other: Andre Course Event Instructors
+  instructors: 
+    show: 
+      other: Andre Instructors
+  course_event_attendees: 
+    show: 
+      other: Andre Course Event Attendees
   course_events: 
     show: 
       other: Andre Course Events

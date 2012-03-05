@@ -1,0 +1,7 @@
+<ul id='sortable_list'>
+  <%= render :partial => 'course_event_attendee', :collection => @course_event_attendees %>
+</ul>
+<%= render :partial => "/shared/admin/sortable_list",
+            :locals => {
+              :continue_reordering => (local_assigns.keys.include?(:continue_reordering)) ? continue_reordering : true
+            } %>

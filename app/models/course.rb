@@ -16,4 +16,9 @@ class Course < ActiveRecord::Base
   def price
     parts.map(&:price).inject(:+)
   end
+  
+  def schedule_it(starts_at, where)
+    CourseEvent.create(:course => self, :title => self.title, :starts_at => starts_at, :venue => where)
+  end
+
 end

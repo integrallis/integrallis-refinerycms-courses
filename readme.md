@@ -1,6 +1,6 @@
 # Integrallis' Course Management Engine for Refinery CMS.
 
-__A RefineryCMS Engine to Create/Manage and Sell Training Courses
+A RefineryCMS Engine to Create/Manage and Sell Training Courses
 
 ## Domain
 
@@ -11,6 +11,7 @@ __A RefineryCMS Engine to Create/Manage and Sell Training Courses
 * _CourseEvent_: A course scheduled to be given at a certain date and time at a given Venue. A course has a given maximum and minimum. capacity, a type (codecamp style, private corporate training, public open enrollment and others), a state (draft, ready, published, postponed, cancelled). Course events are taggable, commentable and rateable. 
 * _Venue_: A location/locale/classroom where a course can be taught. It has a maximum and minimum capacity and a list of amenities (wifi, food, coffee, restrooms).
 * _Attendee_: A person attending a CourseEvent.
+* _CourseEventAttendee_: An Attendee enrollment in a CourseEvent
 
 ## Integrations
 

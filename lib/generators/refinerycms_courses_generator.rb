@@ -11,7 +11,6 @@ class RefinerycmsCourses < Refinery::Generators::EngineInstaller
       puts "Running generators for integrallis-refinerycms-courses dependencies..."
       puts "------------------------"
       generate "acts_as_taggable_on:migration"
-      generate "acts_as_rateable_migration"
       generate "comment"
       generate "formtastic:install"
       puts "------------------------"

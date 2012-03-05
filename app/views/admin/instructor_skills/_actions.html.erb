@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::InstructorSkillsController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_instructor_skills_url
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_instructor_skill_url,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::InstructorSkillsController.sortable? and InstructorSkill.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Instructor Skills"),
+                 admin_instructor_skills_url,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Instructor Skills"),
+                 admin_instructor_skills_url,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -5,6 +5,16 @@ en:
       image_picker: 
         image: image
   plugins: 
+    instructor_skills: 
+      title: Instructor Skills
+    skills: 
+      title: Skills
+    course_event_instructors: 
+      title: Course Event Instructors
+    instructors: 
+      title: Instructors
+    course_event_attendees: 
+      title: Course Event Attendees
     course_events: 
       title: Course Events
     attendees: 
@@ -20,6 +30,71 @@ en:
     courses: 
       title: Courses
   admin: 
+    instructor_skills: 
+      actions: 
+        create_new: Add New Instructor Skill
+        reorder: Reorder Instructor Skills
+        reorder_done: Done Reordering Instructor Skills
+      records: 
+        title: Instructor Skills
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Instructor Skills yet. Click "Add New Instructor Skill" to add your first instructor skill.
+      instructor_skill: 
+        view_live_html: View this instructor skill live <br/><em>(opens in a new window)</em>
+        edit: Edit this instructor skill
+        delete: Remove this instructor skill forever
+    skills: 
+      actions: 
+        create_new: Add New Skill
+        reorder: Reorder Skills
+        reorder_done: Done Reordering Skills
+      records: 
+        title: Skills
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Skills yet. Click "Add New Skill" to add your first skill.
+      skill: 
+        view_live_html: View this skill live <br/><em>(opens in a new window)</em>
+        edit: Edit this skill
+        delete: Remove this skill forever
+    course_event_instructors: 
+      actions: 
+        create_new: Add New Course Event Instructor
+        reorder: Reorder Course Event Instructors
+        reorder_done: Done Reordering Course Event Instructors
+      records: 
+        title: Course Event Instructors
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Course Event Instructors yet. Click "Add New Course Event Instructor" to add your first course event instructor.
+      course_event_instructor: 
+        view_live_html: View this course event instructor live <br/><em>(opens in a new window)</em>
+        edit: Edit this course event instructor
+        delete: Remove this course event instructor forever
+    instructors: 
+      actions: 
+        create_new: Add New Instructor
+        reorder: Reorder Instructors
+        reorder_done: Done Reordering Instructors
+      records: 
+        title: Instructors
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Instructors yet. Click "Add New Instructor" to add your first instructor.
+      instructor: 
+        view_live_html: View this instructor live <br/><em>(opens in a new window)</em>
+        edit: Edit this instructor
+        delete: Remove this instructor forever
+    course_event_attendees: 
+      actions: 
+        create_new: Add New Course Event Attendee
+        reorder: Reorder Course Event Attendees
+        reorder_done: Done Reordering Course Event Attendees
+      records: 
+        title: Course Event Attendees
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Course Event Attendees yet. Click "Add New Course Event Attendee" to add your first course event attendee.
+      course_event_attendee: 
+        view_live_html: View this course event attendee live <br/><em>(opens in a new window)</em>
+        edit: Edit this course event attendee
+        delete: Remove this course event attendee forever
     course_events: 
       actions: 
         create_new: Add New Course Event
@@ -111,6 +186,21 @@ en:
         view_live_html: View this course live <br/><em>(opens in a new window)</em>
         edit: Edit this course
         delete: Remove this course forever
+  instructor_skills: 
+    show: 
+      other: Other Instructor Skills
+  skills: 
+    show: 
+      other: Other Skills
+  course_event_instructors: 
+    show: 
+      other: Other Course Event Instructors
+  instructors: 
+    show: 
+      other: Other Instructors
+  course_event_attendees: 
+    show: 
+      other: Other Course Event Attendees
   course_events: 
     show: 
       other: Other Course Events

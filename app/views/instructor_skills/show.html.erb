@@ -1,0 +1,33 @@
+<% content_for :body_content_title do %>
+  <%= @instructor_skill.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Instructor</h1>
+    <p>
+      <%=raw @instructor_skill.instructor_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Skill</h1>
+    <p>
+      <%=raw @instructor_skill.skill_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="instructor_skills">
+      <% @instructor_skills.each do |instructor_skill| %>
+        <li>
+          <%= link_to instructor_skill.title, instructor_skill_url(instructor_skill) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

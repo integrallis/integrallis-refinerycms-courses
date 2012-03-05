@@ -6,7 +6,6 @@ class CreatePartPrerequisites < ActiveRecord::Migration
       t.integer :prerequisite_part_id
       t.string :reason
       t.integer :position
-      t.integer :position
 
       t.timestamps
     end

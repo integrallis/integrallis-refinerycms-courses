@@ -1,0 +1,18 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(instructor_skill) -%>">
+  <span class='title'>
+    <%= instructor_skill.title %>
+    <span class="preview">&nbsp;</span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("application_go.png"), instructor_skill_url(instructor_skill),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_instructor_skill_path(instructor_skill),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), admin_instructor_skill_path(instructor_skill),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'shared.admin.delete', :title => instructor_skill.title),
+        :method => :delete %>
+  </span>
+</li>

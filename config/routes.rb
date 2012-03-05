@@ -62,4 +62,49 @@ Refinery::Application.routes.draw do
       end
     end
   end
+  resources :course_event_attendees, :only => [:index, :show]
+
+  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+    resources :course_event_attendees, :except => :show do
+      collection do
+        post :update_positions
+      end
+    end
+  end
+  resources :instructors, :only => [:index, :show]
+
+  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+    resources :instructors, :except => :show do
+      collection do
+        post :update_positions
+      end
+    end
+  end
+  resources :course_event_instructors, :only => [:index, :show]
+
+  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+    resources :course_event_instructors, :except => :show do
+      collection do
+        post :update_positions
+      end
+    end
+  end
+  resources :skills, :only => [:index, :show]
+
+  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+    resources :skills, :except => :show do
+      collection do
+        post :update_positions
+      end
+    end
+  end
+  resources :instructor_skills, :only => [:index, :show]
+
+  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+    resources :instructor_skills, :except => :show do
+      collection do
+        post :update_positions
+      end
+    end
+  end
 end

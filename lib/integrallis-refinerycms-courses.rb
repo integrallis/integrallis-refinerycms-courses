@@ -4,9 +4,9 @@ require 'transitions'
 require 'active_record/transitions'
 require 'acts-as-taggable-on'
 require 'acts_as_commentable'
-require 'acts_as_rateable'
 require 'acts_as_list'
 require 'geocoder'
+require 'ajaxful_rating'
 
 module Refinery
   module Courses
@@ -50,6 +50,43 @@ module Refinery
           plugin.activity = {
             :class => Venue,
             :title => 'name'
+          }
+        end
+        
+        Refinery::Plugin.register do |plugin|
+          plugin.name = "course_event_attendees"
+          plugin.activity = {
+            :class => CourseEventAttendee
+          }
+        end        
+ 
+        Refinery::Plugin.register do |plugin|
+          plugin.name = "instructors"
+          plugin.activity = {
+            :class => Instructor,
+            :title => 'first_name'
+          }
+        end
+        
+        Refinery::Plugin.register do |plugin|
+          plugin.name = "course_event_instructors"
+          plugin.activity = {
+            :class => CourseEventInstructor
+          }
+        end
+        
+        Refinery::Plugin.register do |plugin|
+          plugin.name = "skills"
+          plugin.activity = {
+            :class => Skill,
+            :title => 'name'
+          }
+        end
+        
+        Refinery::Plugin.register do |plugin|
+          plugin.name = "instructor_skills"
+          plugin.activity = {
+            :class => InstructorSkill
           }
         end
  
